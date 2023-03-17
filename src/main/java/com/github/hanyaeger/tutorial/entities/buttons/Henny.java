@@ -19,7 +19,7 @@ public class Henny extends DynamicSpriteEntity implements KeyListener, SceneBord
 
     private HealthText HealthPoints;
     private Waterworld hp;
-    private int health = 1;
+    private int health = 10;
 
     public Henny(Coordinate2D location, HealthText HealthPoints, Waterworld hp){
         super("sprites/hanny.png", location, new Size(20,40), 1, 2);
