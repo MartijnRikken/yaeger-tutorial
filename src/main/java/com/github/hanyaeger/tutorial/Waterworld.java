@@ -7,7 +7,7 @@ import com.github.hanyaeger.tutorial.scenes.GameOver;
 import com.github.hanyaeger.tutorial.scenes.TitleScene;
 import javafx.scene.Scene;
 
-public class Waterworld extends YaegerGame {
+public class    Waterworld extends YaegerGame {
 
     @Override
     public void setupGame() {
