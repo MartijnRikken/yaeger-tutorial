@@ -18,16 +18,16 @@ import java.util.Set;
 public class Henny extends DynamicSpriteEntity implements KeyListener, SceneBorderTouchingWatcher, Newtonian, Collided {
 
     private HealthText HealthPoints;
-    private Waterworld hp;
+    private Waterworld waterworld;
     private int health = 10;
 
-    public Henny(Coordinate2D location, HealthText HealthPoints, Waterworld hp){
+    public Henny(Coordinate2D location, HealthText HealthPoints, Waterworld waterworld){
         super("sprites/hanny.png", location, new Size(20,40), 1, 2);
 
         this.HealthPoints = HealthPoints;
         HealthPoints.setHealthText(health);
 
-        this.hp = hp;
+        this.waterworld = waterworld;
 
         setGravityConstant(0.005);
         setFrictionConstant(0.04);
@@ -82,7 +82,7 @@ public class Henny extends DynamicSpriteEntity implements KeyListener, SceneBord
         HealthPoints.setHealthText(health);
 
         if (health == 0){
-            hp.setActiveScene(2);
+            waterworld.setActiveScene(2);
 
         }
     }
